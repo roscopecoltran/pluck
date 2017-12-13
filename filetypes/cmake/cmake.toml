@@ -1,0 +1,24 @@
+[[pluck]]
+name = "project"
+activators = ["project", "("]
+deactivator = ")"
+limit = -1
+
+[[pluck]]
+name = "hunter"
+activators = ["HunterGate", "("]
+deactivator = ")"
+limit = -1
+
+[[pluck]]
+name = "packages"
+activators = ["find_package", "("]
+deactivator = ")"
+limit = -1
+
+[[pluck]]
+name = "modules"
+activators = ["include", "("]
+deactivator = ")"
+limit = -1
+

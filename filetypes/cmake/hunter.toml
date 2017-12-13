@@ -1,0 +1,30 @@
+[[pluck]]
+name = "package"
+activators = ["hunter_add_version", "(", " "]
+deactivator = "VERSION"
+limit = 1
+
+[[pluck]]
+name = "registry"
+activators = ["hunter_add_version", "(", "PACKAGE_NAME"]
+deactivator = ")"
+limit = -1
+
+[[pluck]]
+name = "versions"
+activators = ["hunter_add_version", "(", "PACKAGE_NAME", "VERSION", "\""]
+deactivator = "\""
+limit = -1
+
+[[pluck]]
+name = "tarballs"
+activators = ["hunter_add_version", "(", "PACKAGE_NAME", "VERSION", "URL", "\""]
+deactivator = "\""
+limit = -1
+
+[[pluck]]
+name = "digests"
+activators = ["hunter_add_version", "(", "PACKAGE_NAME", "VERSION", "URL", "SHA", "\n"]
+deactivator = ")"
+limit = -1
+
