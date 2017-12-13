@@ -15,7 +15,7 @@ import (
 
 	"github.com/BurntSushi/toml"
 	"github.com/pkg/errors"
-	"github.com/schollz/pluck/pluck/striphtml"
+	"github.com/roscopecoltran/pluck/pluck/striphtml"
 	log "github.com/sirupsen/logrus"
 )
 
